@@ -175,3 +175,8 @@ _::
   lastKeyWasNumber := false
   return
 }
+
+; New Outlook でCtrl+Enter を無効化（誤送信防止）
+#HotIf WinActive("ahk_exe olk.exe")
+^Enter::return
+#HotIf
