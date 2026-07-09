@@ -121,6 +121,13 @@ _::
   lastKeyWasNumber := false
   return
 }
+@::
+{
+  global lastKeyWasNumber
+  Send("{U+0040}")
+  lastKeyWasNumber := false
+  return
+}
 
 ; 日本語入力時に、数字の後に。を打つときは絶対に 3.14 のようにピリオドになるので、半角に固定
 .::
